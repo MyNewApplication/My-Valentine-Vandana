@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
             "title": "A Question",
             "body": "Har din tumhare saath ek naya adventure! Bollywood ki happy ending se bhi better! Hamesha ke liye? 💕",
             "quote": "Kuch kuch hota hai, Vandana... tum nahi samjhogi. Par main tumhara forever rahunga! 💕",
-            "link": "https://dl.flipkart.com/dl/devora-adjustable-couple-rings-lovers-valentine-gift-stainless-steel-ring-set/p/itm779d69ab45aca?pid=RNGGBTMMWSVTWPBR",
+            "link": "propose.html",
             "linkText": "Our Couple Rings 💍"
         },
         {
@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
             "title": "Sweetness & Light",
             "body": "Tum chocolate se zyada sweet ho! But chocolate bhi zaroori hai na? 😋 Late night dessert runs yaad hain?",
             "quote": "Chocolates toh bahut hain, but tumhara meetha gussa? Bus wahi chahiye!",
-            "link": "https://dl.flipkart.com/s/6YBqanNNNN",
+            "link": "chocolate.html",
             "linkText": "Sweet Chocolates 🍫"
         },
         {
@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
             "title": "My Comfort",
             "body": "Tum ho toh har jagah home jaisa feel hota hai! Yeh teddy rakh lo jab main paas na hoon! 🧸💕",
             "quote": "Main tumhara permanent cuddle buddy hoon. No returns, no exchange!",
-            "link": "https://dl.flipkart.com/s/6Y!zBfNNNN",
+            "link": "teddy.html",
             "linkText": "Your Teddy Bear 🧸"
         },
         {
@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
             "title": "My Vow",
             "body": "Pakka promise: Tumhari smile, tumhari happiness - sab meri responsibility! 7 janam bhi kam padenge! 🤞",
             "quote": "Pinky promise with a twist - har janam mein tumhe dhoondunga aur phir se propose karunga!",
-            "link": "https://dl.flipkart.com/dl/zqa-premium-3d-silicone-figure-keyrings-tom-jerry-creative-cartoon-keying-1pc-key-chain/p/itmffd186626d6b7?pid=KECH8VSTJXJUNZNS",
+            "link": "promise.html",
             "linkText": "Special Keychain 🔑"
         },
         {
@@ -110,7 +110,7 @@ document.addEventListener('DOMContentLoaded', () => {
             "title": "Close to You",
             "body": "Virtual hug sending..! Miss you already, baby! 🤗💕",
             "quote": "Ek baar hug karo toh sab theek ho jaata hai. Tum ho toh sab perfect hai!",
-            "link": "https://dl.flipkart.com/s/6YWHh5NNNN",
+            "link": "hug.html",
             "linkText": "Perfect Gift 🎁"
         },
         {
@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', () => {
             "title": "Dinner Date",
             "body": "Special dinner date tere liye! Hotel Exotica mein ... romantic dinner aur endless baatein! 🍽️✨",
             "quote": "Khana kam, pyaar zyada. Bus tumhare saath time spend karna hai! 💕",
-            "link": "https://www.zomato.com/pune/exotica-yerawada",
+            "link": "valentine.html",
             "linkText": "Our Dinner Reservation 🍽️"
         },
         {
@@ -134,7 +134,7 @@ document.addEventListener('DOMContentLoaded', () => {
             "title": "The Truth Vault",
             "body": "Simple sa truth: Tum meri zindagi ho. Srikant loves Vandana - aaj bhi, kal bhi, hamesha! 💖",
             "quote": "Dil se nikli hai yeh baat, zubaan se nahi. Tumhare bina jeena? Na possible hai! जैसे शिव-पार्वती, हमारा प्रेम भी अमर! 💝🕉️",
-            "link": "https://maps.app.goo.gl/aHIy1Ox5ywTcK11P6",
+            "link": "valentine.html",
             "linkText": "Trimbakeshwar Trip 🛕"
         }
     ];
