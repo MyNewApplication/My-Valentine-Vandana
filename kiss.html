@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teddy Day Surprise 🧸</title>
+    <title>Kiss Day Surprise 💋</title>
     <link
         href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@400;600&display=swap"
         rel="stylesheet">
@@ -17,7 +17,7 @@
 
         body {
             font-family: 'Quicksand', sans-serif;
-            background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 50%, #e17055 100%);
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
             min-height: 100vh;
             display: flex;
             justify-content: center;
@@ -26,14 +26,14 @@
             position: relative;
         }
 
-        .teddy {
+        .kiss {
             position: absolute;
             font-size: 2rem;
-            animation: bounce 3s ease-in-out infinite;
-            opacity: 0.7;
+            animation: float 3s ease-in-out infinite;
+            opacity: 0.8;
         }
 
-        @keyframes bounce {
+        @keyframes float {
 
             0%,
             100% {
@@ -41,7 +41,7 @@
             }
 
             50% {
-                transform: translateY(-25px);
+                transform: translateY(-20px);
             }
         }
 
@@ -49,7 +49,7 @@
             background: rgba(255, 255, 255, 0.95);
             padding: 3rem;
             border-radius: 30px;
-            box-shadow: 0 20px 60px rgba(225, 112, 85, 0.4);
+            box-shadow: 0 20px 60px rgba(255, 105, 135, 0.4);
             text-align: center;
             max-width: 500px;
             width: 90%;
@@ -73,25 +73,25 @@
         h1 {
             font-family: 'Dancing Script', cursive;
             font-size: 3rem;
-            color: #e17055;
+            color: #d63384;
             margin-bottom: 1rem;
         }
 
         .icon {
             font-size: 5rem;
             margin: 1rem 0;
-            animation: hug 2s ease-in-out infinite;
+            animation: kissWave 2s ease-in-out infinite;
         }
 
-        @keyframes hug {
+        @keyframes kissWave {
 
             0%,
             100% {
-                transform: scale(1);
+                transform: scale(1) rotate(0deg);
             }
 
             50% {
-                transform: scale(1.1) rotate(5deg);
+                transform: scale(1.1) rotate(-10deg);
             }
         }
 
@@ -102,11 +102,15 @@
             line-height: 1.6;
         }
 
+        #challenge {
+            /* Ensure challenge section is visible initially */
+        }
+
         #question {
-            background: linear-gradient(135deg, #fff4e6, #ffe8cc);
+            background: linear-gradient(135deg, #fff0f5, #ffe4e1);
             padding: 1.5rem;
             border-radius: 20px;
-            border: 2px dashed #e17055;
+            border: 2px dashed #d63384;
             margin-bottom: 1.5rem;
         }
 
@@ -122,7 +126,7 @@
             align-items: center;
             padding: 1rem 1.5rem;
             background: rgba(255, 255, 255, 0.8);
-            border: 2px solid #e17055;
+            border: 2px solid #d63384;
             border-radius: 15px;
             cursor: pointer;
             transition: all 0.3s;
@@ -131,9 +135,9 @@
 
         .option:hover {
             background: rgba(255, 255, 255, 1);
-            border-color: #fdcb6e;
+            border-color: #e91e63;
             transform: translateX(5px);
-            box-shadow: 0 5px 15px rgba(225, 112, 85, 0.3);
+            box-shadow: 0 5px 15px rgba(214, 51, 132, 0.3);
         }
 
         .option input[type="radio"] {
@@ -150,14 +154,14 @@
 
         button {
             padding: 1rem 2.5rem;
-            background: linear-gradient(45deg, #e17055, #fdcb6e);
+            background: linear-gradient(45deg, #d63384, #e91e63);
             color: white;
             border: none;
             border-radius: 30px;
             font-size: 1.2rem;
             cursor: pointer;
             font-weight: bold;
-            box-shadow: 0 5px 20px rgba(225, 112, 85, 0.4);
+            box-shadow: 0 5px 20px rgba(214, 51, 132, 0.4);
             transition: all 0.3s;
         }
 
@@ -178,7 +182,7 @@
         }
 
         .error {
-            color: #e17055;
+            color: #d63384;
             font-style: italic;
         }
 
@@ -205,13 +209,13 @@
         .link-btn {
             display: inline-block;
             padding: 1rem 2rem;
-            background: linear-gradient(45deg, #e17055, #fdcb6e);
+            background: linear-gradient(45deg, #d63384, #e91e63);
             color: white;
             text-decoration: none;
             border-radius: 25px;
             font-weight: bold;
             margin-top: 1rem;
-            box-shadow: 0 5px 20px rgba(225, 112, 85, 0.4);
+            box-shadow: 0 5px 20px rgba(214, 51, 132, 0.4);
             transition: all 0.3s;
         }
 
@@ -222,41 +226,42 @@
 </head>
 
 <body>
-    <div class="teddy" style="top: 10%; left: 10%;">🧸</div>
-    <div class="teddy" style="top: 20%; left: 80%; animation-delay: 1s;">🤗</div>
-    <div class="teddy" style="top: 60%; left: 15%; animation-delay: 2s;">🧸</div>
-    <div class="teddy" style="top: 70%; left: 85%; animation-delay: 3s;">💛</div>
+    <div class="kiss" style="top: 10%; left: 10%;">💋</div>
+    <div class="kiss" style="top: 20%; left: 80%; animation-delay: 1s;">💄</div>
+    <div class="kiss" style="top: 60%; left: 15%; animation-delay: 2s;">💋</div>
+    <div class="kiss" style="top: 70%; left: 85%; animation-delay: 3s;">💖</div>
     <div class="container">
-        <h1>Teddy Day 🧸</h1>
-        <div class="icon">🧸</div>
-        <p>You're my cuddle buddy forever!</p>
+        <h1>Kiss Day 💋</h1>
+        <div class="icon">💋</div>
+        <p>A kiss is a secret told to the mouth instead of the ear! 😉</p>
         <div id="challenge">
-            <div id="question"><strong>Q:</strong> What do I call you when I'm being extra cute?</div>
+            <div id="question"><strong>Q:</strong> Where are we going for our special dinner date?</div>
             <div class="options">
                 <label class="option">
-                    <input type="radio" name="answer" value="darling">
-                    <span>My Darling 💕</span>
+                    <input type="radio" name="answer" value="home">
+                    <span>Home Sweet Home 🏠</span>
                 </label>
                 <label class="option">
-                    <input type="radio" name="answer" value="baby">
-                    <span>Baby 👶</span>
+                    <input type="radio" name="answer" value="street">
+                    <span>Street Food Stall 🥘</span>
                 </label>
                 <label class="option">
-                    <input type="radio" name="answer" value="sweetie">
-                    <span>Sweetie Pie 🥧</span>
+                    <input type="radio" name="answer" value="exotica">
+                    <span>Hotel Exotica 🍽️✨</span>
                 </label>
                 <label class="option">
-                    <input type="radio" name="answer" value="love">
-                    <span>My Love 💖</span>
+                    <input type="radio" name="answer" value="mystery">
+                    <span>It's a Mystery 🕵️‍♀️</span>
                 </label>
             </div>
-            <button onclick="checkAnswer()">Cuddle Time 🧸</button>
+            <button onclick="checkAnswer()">Seal with a Kiss 💋</button>
             <div id="feedback"></div>
         </div>
         <div id="reveal" class="hidden">
-            <h2 style="color: #e17055; margin: 1rem 0;">You know me too well! 🧸</h2>
-            <p>Your cuddly surprise:</p>
-            <a href="https://dl.flipkart.com/s/6Y!zBfNNNN" target="_blank" class="link-btn">Your Teddy Bear 🧸</a>
+            <h2 style="color: #d63384; margin: 1rem 0;">Mwah! 💋 Perfect Choice!</h2>
+            <p>Our table is waiting:</p>
+            <a href="https://www.zomato.com/pune/exotica-yerawada" target="_blank" class="link-btn">Dinner Reservation
+                🍽️</a>
         </div>
     </div>
     <script>
@@ -264,36 +269,36 @@
             const selected = document.querySelector('input[name="answer"]:checked');
             const feedback = document.getElementById('feedback');
             if (!selected) {
-                feedback.textContent = '💝 Pick what melts your heart!';
+                feedback.textContent = '💝 You have to guess to get the kiss!';
                 feedback.className = 'error';
                 return;
             }
             const answer = selected.value;
             const lovingMessages = {
-                'darling': '💕 Darling is sweet, just not MY word for you!',
-                'sweetie': '🥧 You ARE my sweetie, but that\'s not what I say!',
-                'love': '💖 My love always, but there\'s a cuter name!'
+                'home': '🏠 Cozy, but tonight is special!',
+                'street': '🥘 Yummy, but we need more romance!',
+                'mystery': '🕵️‍♀️ No secrets tonight, just love!'
             };
-            if (answer === 'baby') {
-                feedback.textContent = '✨ Yes! You\'re my baby forever!';
+            if (answer === 'exotica') {
+                feedback.textContent = '✨ Yes! Romantic dinner at Exotica!';
                 feedback.className = 'success';
                 setTimeout(() => {
                     document.getElementById('challenge').classList.add('hidden');
                     document.getElementById('reveal').classList.remove('hidden');
-                    for (let i = 0; i < 20; i++) {
-                        const teddy = document.createElement('div');
-                        teddy.innerHTML = '🧸';
-                        teddy.style.position = 'fixed';
-                        teddy.style.left = Math.random() * 100 + '%';
-                        teddy.style.top = '-50px';
-                        teddy.style.fontSize = '2rem';
-                        teddy.style.animation = `fall ${3 + Math.random() * 2}s linear`;
-                        document.body.appendChild(teddy);
-                        setTimeout(() => teddy.remove(), 5000);
+                    for (let i = 0; i < 25; i++) {
+                        const kiss = document.createElement('div');
+                        kiss.innerHTML = '💋';
+                        kiss.style.position = 'fixed';
+                        kiss.style.left = Math.random() * 100 + '%';
+                        kiss.style.top = '-50px';
+                        kiss.style.fontSize = '2rem';
+                        kiss.style.animation = 'fall 4s linear';
+                        document.body.appendChild(kiss);
+                        setTimeout(() => kiss.remove(), 4000);
                     }
                 }, 1000);
             } else {
-                feedback.textContent = lovingMessages[answer] || '💫 Close, but think cuter!';
+                feedback.textContent = lovingMessages[answer] || '💫 Keep guessing, beautiful!';
                 feedback.className = 'error';
             }
         }

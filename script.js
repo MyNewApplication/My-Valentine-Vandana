@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', () => {
             "title": "Dinner Date",
             "body": "Special dinner date tere liye! Hotel Exotica mein ... romantic dinner aur endless baatein! 🍽️✨",
             "quote": "Khana kam, pyaar zyada. Bus tumhare saath time spend karna hai! 💕",
-            "link": "valentine.html",
+            "link": "kiss.html",
             "linkText": "Our Dinner Reservation 🍽️"
         },
         {
