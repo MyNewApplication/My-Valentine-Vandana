@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
             "title": "A Question",
             "body": "Har din tumhare saath ek naya adventure! Bollywood ki happy ending se bhi better! Hamesha ke liye? 💕",
             "quote": "Kuch kuch hota hai, Vandana... tum nahi samjhogi. Par main tumhara forever rahunga! 💕",
-            "link": "https://www.giva.co/products/silver-rhomb-couple-band?variant=31820947521626",
+            "link": "propose.html",
             "linkText": "Our Couple Rings 💍"
         },
         {
@@ -127,13 +127,13 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             "id": 8,
-            "day": "Shivratri X Valentine's Day × 🕉️💖",
+            "day": "Valentine's Day × Shivratri 🕉️💖",
             "date": "2026-02-14",
             "status": "locked",
             "icon": "💘",
             "title": "The Truth Vault",
-            "body": "Simple sa truth: Tum meri zindagi ho. Srikant loves Vandana - aaj bhi, kal bhi, hamesha! 💖\n\nचौदह फ़रवरी आई इस बार,\nसाथ शिवरात्रि का पावन त्यौहार।\nमन में प्रश्न बड़ा सरल था,\nपूजा पहले या गुलाब का उपहार? 😊\n\nव्रत भी रखा, मुस्कान भी लाई,\nवंदना संग हर घड़ी शुभ बन आई।\nशिवजी से बस यही वर माँगा,\nजीवन भर साथ रहे यह हँसी की गंगा। 🙏\n\nगुलाब हाथ में, मन में श्रद्धा,\nतुम हो मेरा प्रेम, तुम ही साधना।\nValentine हो या शिव की रात,\nवंदना, तुम हो मेरा हर विश्वास।",
-            "quote": "Dil se nikli hai yeh baat, zubaan se nahi. Tumhare bina jeena? Na possible hai! जैसे शिव- पार्वती, हमारा प्रेम भी अमर! 💝🕉️",
+            "body": "Simple sa truth: Tum meri zindagi ho. Srikant loves Vandana - aaj bhi, kal bhi, hamesha! 💖",
+            "quote": "Dil se nikli hai yeh baat, zubaan se nahi. Tumhare bina jeena? Na possible hai! जैसे शिव-पार्वती, हमारा प्रेम भी अमर! 💝🕉️",
             "link": "https://maps.app.goo.gl/aHIy1Ox5ywTcK11P6",
             "linkText": "Trimbakeshwar Trip 🛕"
         }
