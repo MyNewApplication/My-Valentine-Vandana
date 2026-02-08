@@ -1,52 +1,53 @@
-# 7 Days, 1 Truth – Love Vault
+# 💖 Valentine's Week Love Vault
 
-A minimalist, time-locked Valentine Week experience.
+A beautiful, romantic web application celebrating Valentine's Week with 8 days of surprises!
 
-## Features
-- **Time-Locked Cards**: 7 cards that unlock automatically at 12:00 AM IST on their respective days.
-- **Secure Access**: Content is only accessible via a secret URL token.
-- **Minimalist Design**: Dark theme, glassmorphism, and subtle animations.
-- **No Database**: Simple JSON file for content storage.
+## 🌐 Live Demo
+**Coming soon at:** `https://modernmarriagebiodata.github.io/My-Valentine-Vandana/`
 
-## Setup
+## 🚀 How to Enable GitHub Pages (FREE Hosting!)
 
-1.  **Install Dependencies**:
-    ```bash
-    npm install
-    ```
+1. Go to your repository: https://github.com/modernmarriagebiodata/My-Valentine-Vandana
+2. Click on **Settings** tab
+3. In the left sidebar, click **Pages**
+4. Under "Branch", select **main** and folder **/ (root)**
+5. Click **Save**
+6. Wait 1-2 minutes, then visit: `https://modernmarriagebiodata.github.io/My-Valentine-Vandana/?key=srikant-loves-vandana-forever`
 
-2.  **Start Server**:
-    ```bash
-    npm start
-    ```
-    The server will run on `http://localhost:3000`.
-
-3.  **Access the Vault**:
-    Use the secret link printed in the console:
-    `http://localhost:3000/?key=LOVE2026`
-
-## Configuration
-
-### Editing Content
-Open `vaultData.json`. You can edit the `title`, `body`, and `quote` for each day.
-**Do not change the `id` or `day` names unless you update the code logic.**
-
-### Changing Unlock Dates
-Edit the `date` field in `vaultData.json` (Format: `YYYY-MM-DD`).
-The server uses `Asia/Kolkata` timezone to determine if a card is unlocked.
-
-### Changing the Secret Key
-Open `server.js` and change the `SECRET_KEY` variable:
-```javascript
-const SECRET_KEY = "YOUR_NEW_SECRET";
+## 🔑 Access URL
+Share this complete URL with Vandana:
+```
+https://modernmarriagebiodata.github.io/My-Valentine-Vandana/?key=srikant-loves-vandana-forever
 ```
 
-## Deployment
-This project is ready for deployment on platforms like Render, Vercel, or Heroku.
-- **Render/Heroku**: Just push the code. The `start` script is already configured.
-- **Timezone**: Ensure the server timezone is set to `Asia/Kolkata` or rely on the code's explicit timezone handling (which uses `luxon` and is robust regardless of server time).
+## ✨ Features
+- 🌹 **8 Days of Valentine's Week** - Rose Day to Valentine's Day
+- 💍 **Indian-style Romance** - Hindi-English mixed messages
+- 🕉️ **Shiv-Parvati Theme** - Special spiritual touch for Valentine's Day
+- 🍫 **Funny MCQ Questions** - Humorous married couple interactions
+- 💻 **Developer Husband Edition** - "npm install love" button with animations
+- 🎁 **Real Product Links** - Flipkart, Zomato, Google Maps
+- 🔒 **Secret Key Protection** - Only accessible with the correct key
 
-## Project Structure
-- `server.js`: Main backend logic and time-locking.
-- `vaultData.json`: Content data.
-- `public/`: Frontend files (HTML, CSS, JS).
+## 📅 Valentine's Week Schedule
+1. **Feb 7** - Rose Day 🌹
+2. **Feb 8** - Propose Day 💍
+3. **Feb 9** - Chocolate Day 🍫
+4. **Feb 10** - Teddy Day 🧸
+5. **Feb 11** - Promise Day 🤞
+6. **Feb 12** - Hug Day 🤗
+7. **Feb 13** - Kiss Day (Dinner Date) 💋
+8. **Feb 14** - Valentine's Day (Trimbakeshwar Trip) 💘
+
+## 🛠️ Tech Stack
+- Pure HTML5, CSS3, JavaScript
+- No server required - 100% static
+- Responsive design
+- Beautiful animations and effects
+
+## 💕 Made with Love
+Coded with ❤️ by Srikant Pandey for Vandana
+*"Because flowers wilt, but Git commits are forever!"* 😄💻
+
+---
+**License:** Personal Project - Made with Love 💖
