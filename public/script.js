@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const welcomeOverlay = document.getElementById('welcome-overlay');
     const typingText = document.getElementById('typing-text');
     const enterBtn = document.getElementById('enter-vault');
-    const message = "Coded with ❤️ by your Developer Husband...Srikant Pandey---Because flowers wilt, but Git commits are forever! 😄💻";
+    const message = "Warning: High Voltage Love Detected! ⚡💖 | Source: Srikant's Heart 🫀 | Target: My Beautiful Wife Vandana 👰 | Status: Tu hai toh I'm Online, varna System Crash! 😉💻";
     let charIndex = 0;
 
     function typeWriter() {
