@@ -1,23 +1,23 @@
-# 💖 Valentine's Week Love Vault
+# 💖 Valentine's X Maha Shivratri Love Vault 🕉️
 
 A beautiful, romantic web application celebrating Valentine's Week with 8 days of surprises!
 
 ## 🌐 Live Demo
-**Coming soon at:** `https://modernmarriagebiodata.github.io/My-Valentine-Vandana/`
+**Coming soon at:** `https://mynewapplication.github.io/My-Valentine-Vandana/`
 
 ## 🚀 How to Enable GitHub Pages (FREE Hosting!)
 
-1. Go to your repository: https://github.com/modernmarriagebiodata/My-Valentine-Vandana
+1. Go to your repository: https://github.com/MyNewApplication/My-Valentine-Vandana
 2. Click on **Settings** tab
 3. In the left sidebar, click **Pages**
 4. Under "Branch", select **main** and folder **/ (root)**
 5. Click **Save**
-6. Wait 1-2 minutes, then visit: `https://modernmarriagebiodata.github.io/My-Valentine-Vandana/?key=srikant-loves-vandana-forever`
+6. Wait 1-2 minutes, then visit: `https://mynewapplication.github.io/My-Valentine-Vandana/?key=srikant-loves-vandana-forever`
 
 ## 🔑 Access URL
 Share this complete URL with Vandana:
 ```
-https://modernmarriagebiodata.github.io/My-Valentine-Vandana/?key=srikant-loves-vandana-forever
+https://mynewapplication.github.io/My-Valentine-Vandana/?key=srikant-loves-vandana-forever
 ```
 
 ## ✨ Features
