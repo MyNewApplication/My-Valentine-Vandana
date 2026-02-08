@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
             "icon": "🧸",
             "title": "My Comfort",
             "body": "Teddy bear toh bas soft toy hai,\nAsli warmth toh tumhari hug mein hai! 🧸\nJab main na hoon, isse kaam chala lena,\nPar wapas aate hi, bas mujhe gale laga lena! 🤗",
-            "quote": "Soft, cute aur cuddly? Sorry teddy, woh position already taken hai! 🐻",
+            "quote": "Duniye ke sabse soft teddy ko bhi tumhari smile se jalan hoti hai! 🐻💕",
             "link": "teddy.html",
             "linkText": "Your Teddy Bear 🧸"
         },
@@ -108,8 +108,8 @@ document.addEventListener('DOMContentLoaded', () => {
             "status": "locked",
             "icon": "🤗",
             "title": "Close to You",
-            "body": "Jadoo ki jhappi ki hai sakht zaroorat,\nTumhare bina duniye lagti hai khubsurat... nahi, adhoori! 😅\nAa jao paas, mitado yeh doori,\nHug karna hai ab toh majboori! 🤗",
-            "quote": "Doctor ne bola hai Vitamin 'U' ki kami hai. Ek tight hug de do, dose complete ho jayegi! 💊",
+            "body": "Jadoo ki jhappi ki hai sakht zaroorat,\nTumhare bina duniye lagti hai khubsurat... nahi, adhoori! 😅\nAa jao paas, mitado yeh doori,\nHug karna ab toh hai zaroori! 🤗",
+            "quote": "Ek hug hazaar words ke barabar hoti hai. Aur tumhari hug? Woh toh puri duniya hai! 🤗",
             "link": "hug.html",
             "linkText": "Perfect Gift 🎁"
         },
@@ -120,8 +120,8 @@ document.addEventListener('DOMContentLoaded', () => {
             "status": "locked",
             "icon": "💋",
             "title": "Dinner Date",
-            "body": "Hothon pe bas tera naam hai... (cheesy na? 🧀)\nChalo seedha point pe aate hain!\nDinner date is ready, mood is set,\nBest kiss ever? Wanna bet? 💋",
-            "quote": "Kissing burns 6.4 calories a minute. Wanna workout? 😉😘",
+            "body": "Hothon pe bas tera naam hai... (cheesy na? 🧀)\nChalo seedha point pe aate hain!\nDinner date is ready! Bas tumhara haath pakad kar chalna hai. 🍽️✨",
+            "quote": "Mathe ka wo chumban, jo kahe - main hamesha tumhare saath hoon! 😘",
             "link": "kiss.html",
             "linkText": "Our Dinner Reservation 🍽️"
         },
