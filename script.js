@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const welcomeOverlay = document.getElementById('welcome-overlay');
     const typingText = document.getElementById('typing-text');
     const enterBtn = document.getElementById('enter-vault');
-    const message = "Coded with ❤️ by your Developer Husband...Srikant Pandey---Because flowers wilt, but Git commits are forever! 😄💻";
+    const message = "❤️ Status: Madly in Love! | Coded by your Hubby Srikant 👨‍💻 | Warning: Infinite Hugs & Kisses detected! ��";
     let charIndex = 0;
 
     function typeWriter() {
