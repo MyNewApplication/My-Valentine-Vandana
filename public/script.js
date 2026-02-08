@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
             "status": "locked",
             "icon": "🌹",
             "title": "A Single Rose",
-            "body": "Woh pehla gulaab toh bas Trailer tha, meri Rani! Asli Picture (aur saara pyaar) toh abhi baaki hai! 🌹👑😄",
+            "body": "गुलाब दिया है आज एक निशानी,\nतुम हो मेरी हर सुबह, हर कहानी।\nरोज तुमसे प्रेम निभाता रहूँ,\nRose Day नहीं — जीवन भर की रवानी। 🌹👑😄",
             "quote": "Pyaar mein thoda paagalpan zaroori hai, aur tum meri favourite kind of crazy ho!",
             "link": "rose.html",
             "linkText": "Get Your Rose 🌹"
