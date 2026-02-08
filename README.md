@@ -1,4 +1,4 @@
-# 💖 Valentine's X Maha Shivratri Love Vault 🕉️
+# 💖 Shivratri X Valentine's Day × 🕉️💖
 
 A beautiful, romantic web application celebrating Valentine's Week with 8 days of surprises!
 
