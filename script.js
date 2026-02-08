@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const welcomeOverlay = document.getElementById('welcome-overlay');
     const typingText = document.getElementById('typing-text');
     const enterBtn = document.getElementById('enter-vault');
-    const message = "❤️ Status: Madly in Love! | Coded by your Hubby Srikant 👨‍💻 | Warning: Infinite Hugs & Kisses detected! ��";
+    const message = "Status: Dil ka Connection Established 📶💖 | Coded by your Hubby Srikant 👨‍💻 | Promise: Saat Janam tak No Bugs, Sirf Pyar! 💑✨";
     let charIndex = 0;
 
     function typeWriter() {
@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             "id": 8,
-            "day": "Valentine's Day",
+            "day": "Valentine's Day × Shivratri 🕉️💖",
             "date": "2026-02-14",
             "status": "locked",
             "icon": "💘",
@@ -228,7 +228,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const cardEl = document.createElement('div');
             cardEl.className = `card ${card.status}`;
 
-            if (card.day === "Valentine's Day") {
+            if (card.day.includes("Valentine")) {
                 cardEl.classList.add('valentine');
             }
 
