@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teddy Day Surprise 🧸</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@400;600&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 50%, #e17055 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem 0;
+            position: relative;
+        }
+
+        .teddy {
+            position: absolute;
+            font-size: 2rem;
+            animation: bounce 3s ease-in-out infinite;
+            opacity: 0.7;
+        }
+
+        @keyframes bounce {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-25px);
+            }
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 3rem;
+            border-radius: 30px;
+            box-shadow: 0 20px 60px rgba(225, 112, 85, 0.4);
+            text-align: center;
+            max-width: 500px;
+            width: 90%;
+            animation: popIn 0.6s ease;
+            position: relative;
+            z-index: 10;
+        }
+
+        @keyframes popIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 3rem;
+            color: #e17055;
+            margin-bottom: 1rem;
+        }
+
+        .icon {
+            font-size: 5rem;
+            margin: 1rem 0;
+            animation: hug 2s ease-in-out infinite;
+        }
+
+        @keyframes hug {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.1) rotate(5deg);
+            }
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        #question {
+            background: linear-gradient(135deg, #fff4e6, #ffe8cc);
+            padding: 1.5rem;
+            border-radius: 20px;
+            border: 2px dashed #e17055;
+            margin-bottom: 1.5rem;
+        }
+
+        .options {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .option {
+            display: flex;
+            align-items: center;
+            padding: 1rem 1.5rem;
+            background: rgba(255, 255, 255, 0.8);
+            border: 2px solid #e17055;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 1.1rem;
+        }
+
+        .option:hover {
+            background: rgba(255, 255, 255, 1);
+            border-color: #fdcb6e;
+            transform: translateX(5px);
+            box-shadow: 0 5px 15px rgba(225, 112, 85, 0.3);
+        }
+
+        .option input[type="radio"] {
+            margin-right: 1rem;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+
+        .option span {
+            flex: 1;
+            text-align: left;
+        }
+
+        button {
+            padding: 1rem 2.5rem;
+            background: linear-gradient(45deg, #e17055, #fdcb6e);
+            color: white;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            font-weight: bold;
+            box-shadow: 0 5px 20px rgba(225, 112, 85, 0.4);
+            transition: all 0.3s;
+        }
+
+        button:hover {
+            transform: translateY(-3px) scale(1.05);
+        }
+
+        #feedback {
+            margin-top: 1rem;
+            font-weight: bold;
+            min-height: 20px;
+            font-size: 1.1rem;
+        }
+
+        .success {
+            color: #4caf50;
+            text-shadow: 0 0 10px #4caf50;
+        }
+
+        .error {
+            color: #e17055;
+            font-style: italic;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        #reveal {
+            animation: slideIn 0.5s ease;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .link-btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: linear-gradient(45deg, #e17055, #fdcb6e);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            margin-top: 1rem;
+            box-shadow: 0 5px 20px rgba(225, 112, 85, 0.4);
+            transition: all 0.3s;
+        }
+
+        .link-btn:hover {
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="teddy" style="top: 10%; left: 10%;">🧸</div>
+    <div class="teddy" style="top: 20%; left: 80%; animation-delay: 1s;">🤗</div>
+    <div class="teddy" style="top: 60%; left: 15%; animation-delay: 2s;">🧸</div>
+    <div class="teddy" style="top: 70%; left: 85%; animation-delay: 3s;">💛</div>
+    <div class="container">
+        <h1>Teddy Day 🧸</h1>
+        <div class="icon">🧸</div>
+        <p>You're my cuddle buddy forever!</p>
+        <div id="challenge">
+            <div id="question"><strong>Q:</strong> What do I call you when I'm being extra cute?</div>
+            <div class="options">
+                <label class="option">
+                    <input type="radio" name="answer" value="darling">
+                    <span>My Darling 💕</span>
+                </label>
+                <label class="option">
+                    <input type="radio" name="answer" value="baby">
+                    <span>Baby 👶</span>
+                </label>
+                <label class="option">
+                    <input type="radio" name="answer" value="sweetie">
+                    <span>Sweetie Pie 🥧</span>
+                </label>
+                <label class="option">
+                    <input type="radio" name="answer" value="love">
+                    <span>My Love 💖</span>
+                </label>
+            </div>
+            <button onclick="checkAnswer()">Cuddle Time 🧸</button>
+            <div id="feedback"></div>
+        </div>
+        <div id="reveal" class="hidden">
+            <h2 style="color: #e17055; margin: 1rem 0;">You know me too well! 🧸</h2>
+            <p>Your cuddly surprise:</p>
+            <a href="https://www.zepto.com/search?q=teddy" target="_blank" class="link-btn">Find Teddies 🧸</a>
+        </div>
+    </div>
+    <script>
+        function checkAnswer() {
+            const selected = document.querySelector('input[name="answer"]:checked');
+            const feedback = document.getElementById('feedback');
+            if (!selected) {
+                feedback.textContent = '💝 Pick what melts your heart!';
+                feedback.className = 'error';
+                return;
+            }
+            const answer = selected.value;
+            const lovingMessages = {
+                'darling': '💕 Darling is sweet, just not MY word for you!',
+                'sweetie': '🥧 You ARE my sweetie, but that\'s not what I say!',
+                'love': '💖 My love always, but there\'s a cuter name!'
+            };
+            if (answer === 'baby') {
+                feedback.textContent = '✨ Yes! You\'re my baby forever!';
+                feedback.className = 'success';
+                setTimeout(() => {
+                    document.getElementById('challenge').classList.add('hidden');
+                    document.getElementById('reveal').classList.remove('hidden');
+                    for (let i = 0; i < 20; i++) {
+                        const teddy = document.createElement('div');
+                        teddy.innerHTML = '🧸';
+                        teddy.style.position = 'fixed';
+                        teddy.style.left = Math.random() * 100 + '%';
+                        teddy.style.top = '-50px';
+                        teddy.style.fontSize = '2rem';
+                        teddy.style.animation = `fall ${3 + Math.random() * 2}s linear`;
+                        document.body.appendChild(teddy);
+                        setTimeout(() => teddy.remove(), 5000);
+                    }
+                }, 1000);
+            } else {
+                feedback.textContent = lovingMessages[answer] || '💫 Close, but think cuter!';
+                feedback.className = 'error';
+            }
+        }
+        const style = document.createElement('style');
+        style.textContent = '@keyframes fall { to { top: 100vh; transform: rotate(360deg); } }';
+        document.head.appendChild(style);
+    </script>
+</body>
+
+</html>

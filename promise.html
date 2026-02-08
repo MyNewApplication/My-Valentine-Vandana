@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise Day Surprise 🤞</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@400;600&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem 0;
+            position: relative;
+        }
+
+        .promise {
+            position: absolute;
+            font-size: 2rem;
+            animation: pulse 3s ease-in-out infinite;
+            opacity: 0.7;
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                transform: scale(1);
+                opacity: 0.7;
+            }
+
+            50% {
+                transform: scale(1.2);
+                opacity: 1;
+            }
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 3rem;
+            border-radius: 30px;
+            box-shadow: 0 20px 60px rgba(168, 237, 234, 0.4);
+            text-align: center;
+            max-width: 500px;
+            width: 90%;
+            animation: popIn 0.6s ease;
+            position: relative;
+            z-index: 10;
+        }
+
+        @keyframes popIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 3rem;
+            color: #20b2aa;
+            margin-bottom: 1rem;
+        }
+
+        .icon {
+            font-size: 5rem;
+            margin: 1rem 0;
+            animation: handShake 2s ease-in-out infinite;
+        }
+
+        @keyframes handShake {
+
+            0%,
+            100% {
+                transform: rotate(0deg);
+            }
+
+            25% {
+                transform: rotate(-15deg);
+            }
+
+            75% {
+                transform: rotate(15deg);
+            }
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        #question {
+            background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+            padding: 1.5rem;
+            border-radius: 20px;
+            border: 2px dashed #20b2aa;
+            margin-bottom: 1.5rem;
+        }
+
+        .options {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .option {
+            display: flex;
+            align-items: center;
+            padding: 1rem 1.5rem;
+            background: rgba(255, 255, 255, 0.8);
+            border: 2px solid #20b2aa;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 1.1rem;
+        }
+
+        .option:hover {
+            background: rgba(255, 255, 255, 1);
+            border-color: #48d1cc;
+            transform: translateX(5px);
+            box-shadow: 0 5px 15px rgba(32, 178, 170, 0.3);
+        }
+
+        .option input[type="radio"] {
+            margin-right: 1rem;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+
+        .option span {
+            flex: 1;
+            text-align: left;
+        }
+
+        button {
+            padding: 1rem 2.5rem;
+            background: linear-gradient(45deg, #20b2aa, #48d1cc);
+            color: white;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            font-weight: bold;
+            box-shadow: 0 5px 20px rgba(32, 178, 170, 0.4);
+            transition: all 0.3s;
+        }
+
+        button:hover {
+            transform: translateY(-3px) scale(1.05);
+        }
+
+        #feedback {
+            margin-top: 1rem;
+            font-weight: bold;
+            min-height: 20px;
+            font-size: 1.1rem;
+        }
+
+        .success {
+            color: #4caf50;
+            text-shadow: 0 0 10px #4caf50;
+        }
+
+        .error {
+            color: #20b2aa;
+            font-style: italic;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        #reveal {
+            animation: slideIn 0.5s ease;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .link-btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: linear-gradient(45deg, #20b2aa, #48d1cc);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            margin-top: 1rem;
+            box-shadow: 0 5px 20px rgba(32, 178, 170, 0.4);
+            transition: all 0.3s;
+        }
+
+        .link-btn:hover {
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="promise" style="top: 10%; left: 10%;">🤞</div>
+    <div class="promise" style="top: 20%; left: 80%; animation-delay: 1s;">💙</div>
+    <div class="promise" style="top: 60%; left: 15%; animation-delay: 2s;">🤞</div>
+    <div class="promise" style="top: 70%; left: 85%; animation-delay: 3s;">💫</div>
+    <div class="container">
+        <h1>Promise Day 🤞</h1>
+        <div class="icon">🤞</div>
+        <p>Promises made from the heart last forever!</p>
+        <div id="challenge">
+            <div id="question"><strong>Q:</strong> How many lifetimes do I want with you?</div>
+            <div class="options">
+                <label class="option">
+                    <input type="radio" name="answer" value="one">
+                    <span>Just This One ⏳</span>
+                </label>
+                <label class="option">
+                    <input type="radio" name="answer" value="seven">
+                    <span>Seven Lucky Lifetimes 🍀</span>
+                </label>
+                <label class="option">
+                    <input type="radio" name="answer" value="hundred">
+                    <span>A Hundred Lifetimes 💯</span>
+                </label>
+                <label class="option">
+                    <input type="radio" name="answer" value="infinite">
+                    <span>Infinite Forever ♾️</span>
+                </label>
+            </div>
+            <button onclick="checkAnswer()">Seal The Promise 🤞</button>
+            <div id="feedback"></div>
+        </div>
+        <div id="reveal" class="hidden">
+            <h2 style="color: #20b2aa; margin: 1rem 0;">Forever it is! 🤞</h2>
+            <p>Your special gift:</p>
+            <a href="https://dl.flipkart.com/dl/zqa-premium-3d-silicone-figure-keyrings-tom-jerry-creative-cartoon-keying-1pc-key-chain/p/itmffd186626d6b7?pid=KECH8VSTJXJUNZNS&lid=LSTKECH8VSTJXJUNZNSBK4BAF&marketplace=FLIPKART&q=+keychain&store=dgv/tkw/amn&spotlightTagId=default_BestsellerId_dgv/tkw/amn&srno=s_1_3&otracker=search&otracker1=search&fm=Search&iid=c44372f5-9c1e-49a4-a72d-72960916f7e2.KECH8VSTJXJUNZNS.SEARCH&ppt=sp&ppn=sp&ssid=a9sip3jhds0000001770537604201&qH=b079f4ec606331b7&ov_redirect=true&_refId=&_appId=CL"
+                target="_blank" class="link-btn">Find Gifts 🎁</a>
+        </div>
+    </div>
+    <script>
+        function checkAnswer() {
+            const selected = document.querySelector('input[name="answer"]:checked');
+            const feedback = document.getElementById('feedback');
+            if (!selected) {
+                feedback.textContent = '💝 Make a choice, my forever!';
+                feedback.className = 'error';
+                return;
+            }
+            const answer = selected.value;
+            const lovingMessages = {
+                'one': '⏳ One is precious, but I want more with you!',
+                'hundred': '💯 A hundred is amazing, but still not enough!',
+                'infinite': '♾️ Infinite yes! But seven is our lucky number!'
+            };
+            if (answer === 'seven') {
+                feedback.textContent = '✨ Yes! Seven lifetimes of us!';
+                feedback.className = 'success';
+                setTimeout(() => {
+                    document.getElementById('challenge').classList.add('hidden');
+                    document.getElementById('reveal').classList.remove('hidden');
+                    for (let i = 0; i < 20; i++) {
+                        const promise = document.createElement('div');
+                        promise.innerHTML = '🤞';
+                        promise.style.position = 'fixed';
+                        promise.style.left = Math.random() * 100 + '%';
+                        promise.style.top = '-50px';
+                        promise.style.fontSize = '2rem';
+                        promise.style.animation = `fall 4s linear`;
+                        document.body.appendChild(promise);
+                        setTimeout(() => promise.remove(), 4000);
+                    }
+                }, 1000);
+            } else {
+                feedback.textContent = lovingMessages[answer] || '💫 Think of our lucky number!';
+                feedback.className = 'error';
+            }
+        }
+        const style = document.createElement('style');
+        style.textContent = '@keyframes fall { to { top: 100vh; transform: rotate(360deg); } }';
+        document.head.appendChild(style);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propose Day Surprise 💍</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@400;600&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem 0;
+            position: relative;
+        }
+
+        .sparkle {
+            position: absolute;
+            font-size: 1.5rem;
+            animation: twinkle 2s ease-in-out infinite;
+            opacity: 0.8;
+        }
+
+        @keyframes twinkle {
+
+            0%,
+            100% {
+                transform: scale(1) rotate(0deg);
+                opacity: 0.8;
+            }
+
+            50% {
+                transform: scale(1.3) rotate(180deg);
+                opacity: 1;
+            }
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 3rem;
+            border-radius: 30px;
+            box-shadow: 0 20px 60px rgba(102, 126, 234, 0.4);
+            text-align: center;
+            max-width: 500px;
+            width: 90%;
+            animation: popIn 0.6s ease;
+            position: relative;
+            z-index: 10;
+        }
+
+        @keyframes popIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 3rem;
+            color: #667eea;
+            margin-bottom: 1rem;
+        }
+
+        .icon {
+            font-size: 5rem;
+            margin: 1rem 0;
+            animation: shine 3s ease-in-out infinite;
+        }
+
+        @keyframes shine {
+
+            0%,
+            100% {
+                transform: rotate(-10deg) scale(1);
+                filter: brightness(1);
+            }
+
+            50% {
+                transform: rotate(10deg) scale(1.1);
+                filter: brightness(1.3);
+            }
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        #question {
+            background: linear-gradient(135deg, #e0e7ff, #f3e7ff);
+            padding: 1.5rem;
+            border-radius: 20px;
+            border: 2px dashed #764ba2;
+            margin-bottom: 1.5rem;
+        }
+
+        .options {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .option {
+            display: flex;
+            align-items: center;
+            padding: 1rem 1.5rem;
+            background: rgba(255, 255, 255, 0.8);
+            border: 2px solid #764ba2;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 1.1rem;
+        }
+
+        .option:hover {
+            background: rgba(255, 255, 255, 1);
+            border-color: #667eea;
+            transform: translateX(5px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .option input[type="radio"] {
+            margin-right: 1rem;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+
+        .option span {
+            flex: 1;
+            text-align: left;
+        }
+
+        button {
+            padding: 1rem 2.5rem;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            font-weight: bold;
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+            transition: all 0.3s;
+        }
+
+        button:hover {
+            transform: translateY(-3px) scale(1.05);
+        }
+
+        #feedback {
+            margin-top: 1rem;
+            font-weight: bold;
+            min-height: 20px;
+            font-size: 1.1rem;
+        }
+
+        .success {
+            color: #4caf50;
+            text-shadow: 0 0 10px #4caf50;
+        }
+
+        .error {
+            color: #764ba2;
+            font-style: italic;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        #reveal {
+            animation: slideIn 0.5s ease;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .link-btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            margin-top: 1rem;
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+            transition: all 0.3s;
+        }
+
+        .link-btn:hover {
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sparkle" style="top: 10%; left: 10%;">✨</div>
+    <div class="sparkle" style="top: 20%; left: 80%; animation-delay: 1s;">💍</div>
+    <div class="sparkle" style="top: 60%; left: 15%; animation-delay: 2s;">✨</div>
+    <div class="sparkle" style="top: 70%; left: 85%; animation-delay: 3s;">💎</div>
+    <div class="container">
+        <h1>Propose Day 💍</h1>
+        <div class="icon">💍</div>
+        <p>Every day I choose you, my forever!</p>
+        <div id="challenge">
+            <div id="question"><strong>Q:</strong> We're married, par kya tum meri ______ bhi banogi?</div>
+            <div class="options">
+                <label class="option">
+                    <input type="radio" name="answer" value="atm">
+                    <span>ATM Machine 💳</span>
+                </label>
+                <label class="option">
+                    <input type="radio" name="answer" value="cook">
+                    <span>24/7 Cook 👩‍🍳</span>
+                </label>
+                <label class="option">
+                    <input type="radio" name="answer" value="saathi">
+                    <span>Saath Janam Ki Saathi 💕</span>
+                </label>
+                <label class="option">
+                    <input type="radio" name="answer" value="maid">
+                    <span>Personal Maid 🧹</span>
+                </label>
+            </div>
+            <button onclick="checkAnswer()">Confirm Karo 💍</button>
+            <div id="feedback"></div>
+        </div>
+        <div id="reveal" class="hidden">
+            <h2 style="color: #667eea; margin: 1rem 0;">Sahi Jawab! Saath Janam! 💍</h2>
+            <p>Your special gift awaits:</p>
+            <a href="https://www.flipkart.com/devora-adjustable-couple-rings-lovers-valentine-gift-stainless-steel-ring-set/p/itm779d69ab45aca?pid=RNGGBTMMWSVTWPBR"
+                target="_blank" class="link-btn">Our Couple Rings 💎</a>
+        </div>
+    </div>
+    <script>
+        // Instant feedback on selection
+        document.querySelectorAll('input[name="answer"]').forEach(radio => {
+            radio.addEventListener('change', function () {
+                const feedback = document.getElementById('feedback');
+                const lovingMessages = {
+                    'atm': '💳 Arrey! Main ATM nahi hoon... par tumhare liye sab kuch! 😄',
+                    'cook': '👩‍🍳 Cook toh kabhi kabhi ban jaungi, but permanent nahi! 😅',
+                    'saathi': '💕 Haan! Bilkul sahi! Saath janam ka saath! 🥰',
+                    'maid': '🧹 LOL! Maid? Seriously? Tu khud kar apna kaam! 😂'
+                };
+
+                if (this.value === 'saathi') {
+                    feedback.textContent = lovingMessages[this.value];
+                    feedback.className = 'success';
+                } else {
+                    feedback.textContent = lovingMessages[this.value];
+                    feedback.className = 'error';
+                }
+            });
+        });
+
+        function checkAnswer() {
+            const selected = document.querySelector('input[name="answer"]:checked');
+            const feedback = document.getElementById('feedback');
+            if (!selected) {
+                feedback.textContent = '💝 Kuch toh select kar, jaan!';
+                feedback.className = 'error';
+                return;
+            }
+
+            if (selected.value === 'saathi') {
+                feedback.textContent = '✨ Perfect! Saath Janam Ki Saathi! 💕';
+                feedback.className = 'success';
+                setTimeout(() => {
+                    document.getElementById('challenge').classList.add('hidden');
+                    document.getElementById('reveal').classList.remove('hidden');
+                    for (let i = 0; i < 30; i++) {
+                        const sparkle = document.createElement('div');
+                        sparkle.innerHTML = '💍';
+                        sparkle.style.position = 'fixed';
+                        sparkle.style.left = Math.random() * 100 + '%';
+                        sparkle.style.top = '-50px';
+                        sparkle.style.fontSize = '2rem';
+                        sparkle.style.animation = `fall ${3 + Math.random() * 2}s linear`;
+                        document.body.appendChild(sparkle);
+                        setTimeout(() => sparkle.remove(), 5000);
+                    }
+                }, 1000);
+            }
+        }
+        const style = document.createElement('style');
+        style.textContent = '@keyframes fall { to { top: 100vh; transform: rotate(360deg); } }';
+        document.head.appendChild(style);
+    </script>
+</body>
+
+</html>

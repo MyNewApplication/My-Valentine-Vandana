@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hug Day Surprise 🤗</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@400;600&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem 0;
+            position: relative;
+        }
+
+        .hug {
+            position: absolute;
+            font-size: 2rem;
+            animation: embrace 3s ease-in-out infinite;
+            opacity: 0.8;
+        }
+
+        @keyframes embrace {
+
+            0%,
+            100% {
+                transform: scale(1) rotate(0deg);
+            }
+
+            50% {
+                transform: scale(1.15) rotate(10deg);
+            }
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 3rem;
+            border-radius: 30px;
+            box-shadow: 0 20px 60px rgba(252, 182, 159, 0.4);
+            text-align: center;
+            max-width: 500px;
+            width: 90%;
+            animation: popIn 0.6s ease;
+            position: relative;
+            z-index: 10;
+        }
+
+        @keyframes popIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 3rem;
+            color: #ff7043;
+            margin-bottom: 1rem;
+        }
+
+        .icon {
+            font-size: 5rem;
+            margin: 1rem 0;
+            animation: hugWave 2s ease-in-out infinite;
+        }
+
+        @keyframes hugWave {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.1);
+            }
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        #question {
+            background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+            padding: 1.5rem;
+            border-radius: 20px;
+            border: 2px dashed #ff7043;
+            margin-bottom: 1.5rem;
+        }
+
+        .options {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .option {
+            display: flex;
+            align-items: center;
+            padding: 1rem 1.5rem;
+            background: rgba(255, 255, 255, 0.8);
+            border: 2px solid #ff7043;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 1.1rem;
+        }
+
+        .option:hover {
+            background: rgba(255, 255, 255, 1);
+            border-color: #ffab91;
+            transform: translateX(5px);
+            box-shadow: 0 5px 15px rgba(255, 112, 67, 0.3);
+        }
+
+        .option input[type="radio"] {
+            margin-right: 1rem;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+
+        .option span {
+            flex: 1;
+            text-align: left;
+        }
+
+        button {
+            padding: 1rem 2.5rem;
+            background: linear-gradient(45deg, #ff7043, #ffab91);
+            color: white;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            font-weight: bold;
+            box-shadow: 0 5px 20px rgba(255, 112, 67, 0.4);
+            transition: all 0.3s;
+        }
+
+        button:hover {
+            transform: translateY(-3px) scale(1.05);
+        }
+
+        #feedback {
+            margin-top: 1rem;
+            font-weight: bold;
+            min-height: 20px;
+            font-size: 1.1rem;
+        }
+
+        .success {
+            color: #4caf50;
+            text-shadow: 0 0 10px #4caf50;
+        }
+
+        .error {
+            color: #ff7043;
+            font-style: italic;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        #reveal {
+            animation: slideIn 0.5s ease;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .link-btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: linear-gradient(45deg, #ff7043, #ffab91);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            margin-top: 1rem;
+            box-shadow: 0 5px 20px rgba(255, 112, 67, 0.4);
+            transition: all 0.3s;
+        }
+
+        .link-btn:hover {
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hug" style="top: 10%; left: 10%;">🤗</div>
+    <div class="hug" style="top: 20%; left: 80%; animation-delay: 1s;">💛</div>
+    <div class="hug" style="top: 60%; left: 15%; animation-delay: 2s;">🤗</div>
+    <div class="hug" style="top: 70%; left: 85%; animation-delay: 3s;">🧡</div>
+    <div class="container">
+        <h1>Hug Day 🤗</h1>
+        <div class="icon">🤗</div>
+        <p>Sending you the tightest virtual hug ever!</p>
+        <div id="challenge">
+            <div id="question"><strong>Q:</strong> What kind of hug do you want right now?</div>
+            <div class="options">
+                <label class="option">
+                    <input type="radio" name="answer" value="tight">
+                    <span>Super Tight Squeeze 💪</span>
+                </label>
+                <label class="option">
+                    <input type="radio" name="answer" value="warm">
+                    <span>Warm & Cozy 🔥</span>
+                </label>
+                <label class="option">
+                    <input type="radio" name="answer" value="never">
+                    <span>Never Ending Hug ♾️</span>
+                </label>
+                <label class="option">
+                    <input type="radio" name="answer" value="all">
+                    <span>All of the Above! 💖</span>
+                </label>
+            </div>
+            <button onclick="checkAnswer()">Send Hugs 🤗</button>
+            <div id="feedback"></div>
+        </div>
+        <div id="reveal" class="hidden">
+            <h2 style="color: #ff7043; margin: 1rem 0;">*Big Warm Hug* 🤗</h2>
+            <p>A sweet treat with that hug:</p>
+            <a href="https://www.zepto.com/search?q=chocolate" target="_blank" class="link-btn">Sweet Surprise 🍫</a>
+        </div>
+    </div>
+    <script>
+        function checkAnswer() {
+            const selected = document.querySelector('input[name="answer"]:checked');
+            const feedback = document.getElementById('feedback');
+            if (!selected) {
+                feedback.textContent = '💝 Pick one and I\'ll hug you tight!';
+                feedback.className = 'error';
+                return;
+            }
+            const answer = selected.value;
+            const lovingMessages = {
+                'tight': '💪 Coming in with the tightest hug ever!',
+                'warm': '🔥 Wrapping you in warmth and love!',
+                'never': '♾️ I\'ll never let go, I promise!'
+            };
+            if (answer === 'all') {
+                feedback.textContent = '✨ Perfect! You get ALL my hugs!';
+                feedback.className = 'success';
+                setTimeout(() => {
+                    document.getElementById('challenge').classList.add('hidden');
+                    document.getElementById('reveal').classList.remove('hidden');
+                    for (let i = 0; i < 25; i++) {
+                        const hug = document.createElement('div');
+                        hug.innerHTML = '🤗';
+                        hug.style.position = 'fixed';
+                        hug.style.left = Math.random() * 100 + '%';
+                        hug.style.top = '-50px';
+                        hug.style.fontSize = '2rem';
+                        hug.style.animation = 'fall 4s linear';
+                        document.body.appendChild(hug);
+                        setTimeout(() => hug.remove(), 4000);
+                    }
+                }, 1000);
+            } else {
+                feedback.textContent = lovingMessages[answer] || '💫 But why not ALL?';
+                feedback.className = 'error';
+            }
+        }
+        const style = document.createElement('style');
+        style.textContent = '@keyframes fall { to { top: 100vh; transform: rotate(360deg); } }';
+        document.head.appendChild(style);
+    </script>
+</body>
+
+</html>
