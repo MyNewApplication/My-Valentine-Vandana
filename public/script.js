@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             "id": 8,
-            "day": "Valentine's Day",
+            "day": "Valentine's Day × Shivratri 🕉️💖",
             "date": "2026-02-14",
             "status": "locked",
             "icon": "💘",
