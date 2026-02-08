@@ -140,6 +140,22 @@ document.addEventListener('DOMContentLoaded', () => {
     ];
 
     function loadVault() {
+        // Check current date and unlock cards
+        const now = new Date();
+        const today = new Date(now.getFullYear(), now.getMonth(), now.getDate()); // strip time
+
+        vaultData.forEach(card => {
+            const [year, month, day] = card.date.split('-').map(Number);
+            const cardDate = new Date(year, month - 1, day); // month is 0-indexed
+
+            // If card date is today or earlier, unlock it
+            if (cardDate <= today) {
+                card.status = 'unlocked';
+            } else {
+                card.status = 'locked';
+            }
+        });
+
         renderCards(vaultData);
     }
 
