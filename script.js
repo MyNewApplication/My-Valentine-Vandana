@@ -200,7 +200,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             setTimeout(() => {
                 challengeOverlay.classList.add('hidden');
-                window.open(currentLink, '_blank');
+                window.open(currentLink, '_self');
             }, 1500);
         } else {
             feedbackEl.textContent = "Not quite. Try again! 💫";
@@ -267,7 +267,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         e.stopPropagation(); // Prevent card click
                         const link = btn.getAttribute('data-link');
                         // Navigate to internal surprise page
-                        window.open(link, '_blank');
+                        window.open(link, '_self');
                     });
                 }
             }
