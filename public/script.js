@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
             "status": "locked",
             "icon": "🌹",
             "title": "A Single Rose",
-            "body": "Pehli baar jab tumhe phool diya tha? Bas trailer tha, asli film abhi baaki hai! 🌹😄",
+            "body": "Woh pehla gulaab toh bas Trailer tha, meri Rani! Asli Picture (aur saara pyaar) toh abhi baaki hai! 🌹👑😄",
             "quote": "Pyaar mein thoda paagalpan zaroori hai, aur tum meri favourite kind of crazy ho!",
             "link": "rose.html",
             "linkText": "Get Your Rose 🌹"
@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
             "title": "A Question",
             "body": "Har din tumhare saath ek naya adventure! Bollywood ki happy ending se bhi better! Hamesha ke liye? 💕",
             "quote": "Kuch kuch hota hai, Vandana... tum nahi samjhogi. Par main tumhara forever rahunga! 💕",
-            "link": "https://dl.flipkart.com/dl/devora-adjustable-couple-rings-lovers-valentine-gift-stainless-steel-ring-set/p/itm779d69ab45aca?pid=RNGGBTMMWSVTWPBR",
+            "link": "https://www.giva.co/products/silver-rhomb-couple-band?variant=31820947521626",
             "linkText": "Our Couple Rings 💍"
         },
         {
