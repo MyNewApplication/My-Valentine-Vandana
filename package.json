@@ -1,0 +1,13 @@
+{
+  "name": "love-vault",
+  "version": "1.0.0",
+  "description": "7 Days, 1 Truth – Love Vault",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "luxon": "^3.5.0"
+  }
+}

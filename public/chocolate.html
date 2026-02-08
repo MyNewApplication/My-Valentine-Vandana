@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chocolate Day Surprise 🍫</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@400;600&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background: linear-gradient(135deg, #6d4c41 0%, #8d6e63 30%, #d7ccc8 70%, #f5f5f5 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem 0;
+            position: relative;
+        }
+
+        .chocolate {
+            position: absolute;
+            font-size: 1.5rem;
+            animation: float 5s ease-in-out infinite;
+            opacity: 0.7;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0) rotate(0deg);
+            }
+
+            50% {
+                transform: translateY(-40px) rotate(15deg);
+            }
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 3rem;
+            border-radius: 30px;
+            box-shadow: 0 20px 60px rgba(109, 76, 65, 0.3);
+            text-align: center;
+            max-width: 500px;
+            width: 90%;
+            animation: popIn 0.6s ease;
+            position: relative;
+            z-index: 10;
+        }
+
+        @keyframes popIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 3rem;
+            color: #6d4c41;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .icon {
+            font-size: 5rem;
+            margin: 1rem 0;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        #question {
+            background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+            padding: 1.5rem;
+            border-radius: 20px;
+            border: 2px dashed #8d6e63;
+            margin-bottom: 1.5rem;
+        }
+
+
+        .options {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .option {
+            display: flex;
+            align-items: center;
+            padding: 1rem 1.5rem;
+            background: rgba(255, 255, 255, 0.8);
+            border: 2px solid #8d6e63;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 1.1rem;
+        }
+
+        .option:hover {
+            background: rgba(255, 255, 255, 1);
+            border-color: #6d4c41;
+            transform: translateX(5px);
+            box-shadow: 0 5px 15px rgba(109, 76, 65, 0.2);
+        }
+
+        .option input[type="radio"] {
+            margin-right: 1rem;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+
+        .option span {
+            flex: 1;
+            text-align: left;
+        }
+
+        .error {
+            color: #ff6f00;
+            font-style: italic;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        #reveal {
+            animation: slideIn 0.5s ease;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .link-btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: linear-gradient(45deg, #ff6f00, #ff8f00);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            margin-top: 1rem;
+            box-shadow: 0 5px 20px rgba(255, 111, 0, 0.4);
+            transition: all 0.3s;
+        }
+
+        .link-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(255, 111, 0, 0.6);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="chocolate" style="top: 10%; left: 10%;">🍫</div>
+    <div class="chocolate" style="top: 20%; left: 80%; animation-delay: 1s;">🍬</div>
+    <div class="chocolate" style="top: 60%; left: 15%; animation-delay: 2s;">🍫</div>
+    <div class="chocolate" style="top: 70%; left: 85%; animation-delay: 3s;">🍰</div>
+    <div class="chocolate" style="top: 40%; left: 90%; animation-delay: 1.5s;">🍫</div>
+
+    <div class="container">
+        <h1>Chocolate Day 🍫</h1>
+        <div class="icon">🍫</div>
+        <p>Life with you is sweet, but a little chocolate never hurts!</p>
+
+        <div id="challenge">
+            <div id="question">
+                <strong>Q:</strong> Tum chocolate se zyada kya ho?
+            </div>
+            <div class="options">
+                <label class="option">
+                    <input type="radio" name="answer" value="expensive">
+                    <span>Expensive 💸</span>
+                </label>
+                <label class="option">
+                    <input type="radio" name="answer" value="trouble">
+                    <span>Trouble Maker 😈</span>
+                </label>
+                <label class="option">
+                    <input type="radio" name="answer" value="sweet">
+                    <span>Sweet & Special 💖</span>
+                </label>
+                <label class="option">
+                    <input type="radio" name="answer" value="drama">
+                    <span>Drama Queen 🎭</span>
+                </label>
+            </div>
+            <button onclick="checkAnswer()">Check Karo 🍫</button>
+            <div id="feedback"></div>
+        </div>
+
+
+        <div id="reveal" class="hidden">
+            <h2 style="color: #ff6f00; margin: 1rem 0;">Bilkul Sahi! 🍫💕</h2>
+            <p>Here's your sweet surprise:</p>
+            <a href="https://dl.flipkart.com/s/6YBqanNNNN" target="_blank" class="link-btn">
+                Sweet Chocolates 🍫
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Instant feedback on selection
+        document.querySelectorAll('input[name="answer"]').forEach(radio => {
+            radio.addEventListener('change', function () {
+                const feedback = document.getElementById('feedback');
+                const lovingMessages = {
+                    'expensive': '💸 Haan, expensive hoon! But priceless bhi! 😄',
+                    'trouble': '😈 Trouble toh deti hoon, par pyaar bhi toh deti hoon! 😘',
+                    'sweet': '💖 Haaye! Sahi pakda! Sweet AND special! 🥰',
+                    'drama': '🎭 Drama queen? Thoda sa... par tumhara favorite drama! 😂'
+                };
+
+                if (this.value === 'sweet') {
+                    feedback.textContent = lovingMessages[this.value];
+                    feedback.className = 'success';
+                } else {
+                    feedback.textContent = lovingMessages[this.value];
+                    feedback.className = 'error';
+                }
+            });
+        });
+
+        const lovingMessages = {
+            'sugar': '🍬 Sugar is sweet, but not as sweet as you are to me!',
+            'honey': '🍯 Honey is golden, but your smile is priceless!',
+            'candy': '🍭 Candy melts, but my love for you never will!',
+            'vandana': '✨ Exactly! You\'re the sweetest thing in my world!'
+        };
+
+        // Add event listeners to all radio buttons for instant feedback
+        document.querySelectorAll('input[name="answer"]').forEach(radio => {
+            radio.addEventListener('change', function () {
+                const feedback = document.getElementById('feedback');
+                const message = lovingMessages[this.value];
+
+                if (this.value === 'vandana') {
+                    feedback.textContent = message;
+                    feedback.className = 'success';
+                } else {
+                    feedback.textContent = message;
+                    feedback.className = 'error';
+                }
+            });
+        });
+
+        function checkAnswer() {
+            const selected = document.querySelector('input[name="answer"]:checked');
+            const feedback = document.getElementById('feedback');
+
+            if (!selected) {
+                feedback.textContent = '💝 Please pick one, sweetheart!';
+                feedback.className = 'error';
+                return;
+            }
+
+            if (selected.value === 'vandana') {
+                setTimeout(() => {
+                    document.getElementById('challenge').classList.add('hidden');
+                    document.getElementById('reveal').classList.remove('hidden');
+                    createChocolates();
+                }, 1000);
+            }
+        }
+
+        function createChocolates() {
+            for (let i = 0; i < 20; i++) {
+                const choc = document.createElement('div');
+                choc.innerHTML = '🍫';
+                choc.style.position = 'fixed';
+                choc.style.left = Math.random() * 100 + '%';
+                choc.style.top = '-50px';
+                choc.style.fontSize = '2rem';
+                choc.style.animation = `fall ${3 + Math.random() * 2}s linear`;
+                document.body.appendChild(choc);
+                setTimeout(() => choc.remove(), 5000);
+            }
+        }
+
+        const style = document.createElement('style');
+        style.textContent = `@keyframes fall { to { top: 100vh; transform: rotate(360deg); } }`;
+        document.head.appendChild(style);
+
+    </script>
+</body>
+
+</html>

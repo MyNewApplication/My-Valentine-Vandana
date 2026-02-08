@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>7 Days, 1 Truth</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@300;400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+
+    <!-- Surprise Welcome Overlay -->
+    <div id="welcome-overlay">
+        <div class="typewriter">
+            <h1 id="typing-text"></h1>
+        </div>
+        <button id="enter-vault">npm install love 💖</button>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>Srikant & Vandana</h1>
+            <p class="subtitle">7 Days of Surprises, 1 Eternal Truth</p>
+        </header>
+
+        <main id="vault-grid">
+            <!-- Cards will be injected here -->
+            <div class="loading">Opening the Vault...</div>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Love Vault. Forever & Always.</p>
+        </footer>
+    </div>
+
+    <!-- Challenge Overlay -->
+    <div id="challenge-overlay" class="overlay hidden">
+        <div class="challenge-content">
+            <h2 id="challenge-question">Question goes here...</h2>
+            <input type="text" id="challenge-input" placeholder="Your Answer..." />
+            <button id="submit-challenge">Unlock 🔓</button>
+            <p id="challenge-hint" class="hint"></p>
+            <div id="challenge-feedback"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
