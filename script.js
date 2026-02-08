@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
             "status": "locked",
             "icon": "🧸",
             "title": "My Comfort",
-            "body": "Teddy bear toh bas soft toy hai,\nAsli warmth toh tumhari hug mein hai! 🧸\nJab main na hoon, isse kaam chala lena,\nPar wapas aate hi, mujhe zor se daba lena! 🤗",
+            "body": "Teddy bear toh bas soft toy hai,\nAsli warmth toh tumhari hug mein hai! 🧸\nJab main na hoon, isse kaam chala lena,\nPar wapas aate hi, bas mujhe gale laga lena! 🤗",
             "quote": "Soft, cute aur cuddly? Sorry teddy, woh position already taken hai! 🐻",
             "link": "teddy.html",
             "linkText": "Your Teddy Bear 🧸"
@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             "id": 8,
-            "day": "Shivratri X Valentine's Day × 🕉️💖",
+            "day": "Maha Shivratri  × Valentine's Day  🕉️💖",
             "date": "2026-02-14",
             "status": "locked",
             "icon": "💘",

@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
             "status": "locked",
             "icon": "🧸",
             "title": "My Comfort",
-            "body": "Teddy bear toh bas soft toy hai,\nAsli warmth toh tumhari hug mein hai! 🧸\nJab main na hoon, isse kaam chala lena,\nPar wapas aate hi, mujhe zor se daba lena! �",
+            "body": "Teddy bear toh bas soft toy hai,\nAsli warmth toh tumhari hug mein hai! 🧸\nJab main na hoon, isse kaam chala lena,\nPar wapas aate hi, bas mujhe gale laga lena! 🤗",
             "quote": "Soft, cute aur cuddly? Sorry teddy, woh position already taken hai! 🐻",
             "link": "https://dl.flipkart.com/s/6Y!zBfNNNN",
             "linkText": "Your Teddy Bear 🧸"
@@ -121,13 +121,13 @@ document.addEventListener('DOMContentLoaded', () => {
             "icon": "💋",
             "title": "Dinner Date",
             "body": "Hothon pe bas tera naam hai... (cheesy na? 🧀)\nChalo seedha point pe aate hain!\nDinner date is ready, mood is set,\nBest kiss ever? Wanna bet? 💋",
-            "quote": "Kissing burns 6.4 calories a minute. Wanna workout? 😉�",
+            "quote": "Kissing burns 6.4 calories a minute. Wanna workout? 😉😘",
             "link": "https://www.zomato.com/pune/exotica-yerawada",
             "linkText": "Our Dinner Reservation 🍽️"
         },
         {
             "id": 8,
-            "day": "Valentine's Day × Shivratri 🕉️💖",
+            "day": "Maha Shivratri  × Valentine's Day  🕉️💖",
             "date": "2026-02-14",
             "status": "locked",
             "icon": "💘",
