@@ -256,10 +256,31 @@
         <div id="reveal" class="hidden">
             <h2 style="color: #e17055; margin: 1rem 0;">You know me too well! 🧸</h2>
             <p>Your cuddly surprise:</p>
-            <a href="https://dl.flipkart.com/s/6Y!zBfNNNN" target="_blank" class="link-btn">Your Teddy Bear 🧸</a>
+            <a href="https://www.zepto.com/search?q=teddy" target="_blank" class="link-btn">Find Teddies 🧸</a>
         </div>
     </div>
     <script>
+        // Instant feedback on selection
+        document.querySelectorAll('input[name="answer"]').forEach(radio => {
+            radio.addEventListener('change', function () {
+                const feedback = document.getElementById('feedback');
+                const lovingMessages = {
+                    'darling': '💕 Darling is nice, but I have a special name for you! 😉',
+                    'baby': '✨ Aww! You know it! You are my baby! 🥰',
+                    'sweetie': '🥧 Sweetie is cute, but not the one! 😜',
+                    'love': '💖 You are my love, but pick the other one! 😘'
+                };
+
+                if (this.value === 'baby') {
+                    feedback.textContent = lovingMessages[this.value];
+                    feedback.className = 'success';
+                } else {
+                    feedback.textContent = lovingMessages[this.value];
+                    feedback.className = 'error';
+                }
+            });
+        });
+
         function checkAnswer() {
             const selected = document.querySelector('input[name="answer"]:checked');
             const feedback = document.getElementById('feedback');

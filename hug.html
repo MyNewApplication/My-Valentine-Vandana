@@ -256,10 +256,31 @@
         <div id="reveal" class="hidden">
             <h2 style="color: #ff7043; margin: 1rem 0;">*Big Warm Hug* 🤗</h2>
             <p>A sweet treat with that hug:</p>
-            <a href="https://dl.flipkart.com/s/6YWHh5NNNN" target="_blank" class="link-btn">Perfect Gift 🎁</a>
+            <a href="https://www.zepto.com/search?q=chocolate" target="_blank" class="link-btn">Sweet Surprise 🍫</a>
         </div>
     </div>
     <script>
+        // Instant feedback on selection
+        document.querySelectorAll('input[name="answer"]').forEach(radio => {
+            radio.addEventListener('change', function () {
+                const feedback = document.getElementById('feedback');
+                const lovingMessages = {
+                    'tight': '💪 Tight hug is great, but why stop there? 😉',
+                    'warm': '🔥 Warm hugs are best, but I have more! 🥰',
+                    'never': '♾️ Never letting go! But pick the best option! 💖',
+                    'all': '✨ Yesss! You deserve ALL the hugs! 🤗'
+                };
+
+                if (this.value === 'all') {
+                    feedback.textContent = lovingMessages[this.value];
+                    feedback.className = 'success';
+                } else {
+                    feedback.textContent = lovingMessages[this.value];
+                    feedback.className = 'error';
+                }
+            });
+        });
+
         function checkAnswer() {
             const selected = document.querySelector('input[name="answer"]:checked');
             const feedback = document.getElementById('feedback');

@@ -267,6 +267,27 @@
         </div>
     </div>
     <script>
+        // Instant feedback on selection
+        document.querySelectorAll('input[name="answer"]').forEach(radio => {
+            radio.addEventListener('change', function () {
+                const feedback = document.getElementById('feedback');
+                const lovingMessages = {
+                    'one': '⏳ Sirf ek? Itna kam pyaar? 😜',
+                    'seven': '🍀 Sahi pakda! Saat janam ka wada! 💖',
+                    'hundred': '💯 Sau janam? Not bad, but we have a special number! 😉',
+                    'infinite': '♾️ Forever is guaranteed, but pick our lucky number! 😘'
+                };
+
+                if (this.value === 'seven') {
+                    feedback.textContent = lovingMessages[this.value];
+                    feedback.className = 'success';
+                } else {
+                    feedback.textContent = lovingMessages[this.value];
+                    feedback.className = 'error';
+                }
+            });
+        });
+
         function checkAnswer() {
             const selected = document.querySelector('input[name="answer"]:checked');
             const feedback = document.getElementById('feedback');

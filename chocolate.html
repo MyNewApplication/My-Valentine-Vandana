@@ -265,29 +265,6 @@
             });
         });
 
-        const lovingMessages = {
-            'sugar': '🍬 Sugar is sweet, but not as sweet as you are to me!',
-            'honey': '🍯 Honey is golden, but your smile is priceless!',
-            'candy': '🍭 Candy melts, but my love for you never will!',
-            'vandana': '✨ Exactly! You\'re the sweetest thing in my world!'
-        };
-
-        // Add event listeners to all radio buttons for instant feedback
-        document.querySelectorAll('input[name="answer"]').forEach(radio => {
-            radio.addEventListener('change', function () {
-                const feedback = document.getElementById('feedback');
-                const message = lovingMessages[this.value];
-
-                if (this.value === 'vandana') {
-                    feedback.textContent = message;
-                    feedback.className = 'success';
-                } else {
-                    feedback.textContent = message;
-                    feedback.className = 'error';
-                }
-            });
-        });
-
         function checkAnswer() {
             const selected = document.querySelector('input[name="answer"]:checked');
             const feedback = document.getElementById('feedback');
@@ -298,12 +275,21 @@
                 return;
             }
 
-            if (selected.value === 'vandana') {
+            if (selected.value === 'sweet') {
                 setTimeout(() => {
                     document.getElementById('challenge').classList.add('hidden');
                     document.getElementById('reveal').classList.remove('hidden');
                     createChocolates();
                 }, 1000);
+            } else {
+                // If they click check with wrong answer, reassure them or give a hint
+                const lovingMessages = {
+                    'expensive': '💸 Expensive? Maybe, but you love me anyway! Try again! 😄',
+                    'trouble': '😈 Trouble? Yes! But correct answer abhi baaki hai! 😘',
+                    'drama': '🎭 Drama toh hai, par sahi jawaab kuch aur hai! 😂'
+                };
+                feedback.textContent = lovingMessages[selected.value] || 'Galat jawaab janeman! Phir se try karo! 😜';
+                feedback.className = 'error';
             }
         }
 
